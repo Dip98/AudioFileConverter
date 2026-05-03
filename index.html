@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Free Audio File Converter</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <link href=https://tomhodgins.github.io/preset/preset.css rel=stylesheet>
+    </head>
+    <body>
+        <div class="header">
+        <br>
+        <h1>Free Audio File Converter</h1>
+        <h2>By Dipper98</h2>
+        <br>
+        <br>
+<div>
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+</g>
+</svg>
+</div>
+</div>
+    <br>
+    <h2 class = 'make-center'>Quickly convert your file into a <div class = "list-animation">
+      <ul>
+        <li>.mp3</li>
+        <li>.aac</li>
+        <li>.m4a</li>
+        <li>.wav</li>
+        <li>.ogg</li>
+      </ul>
+    </div></h2>
+    <h2 class = 'make-center'>in four simple steps!</h2>
+    <div class = 'converting-container'>
+        <div class = 'left-part'>
+            <h2>Step 1: Upload File</h2>
+            <div id = 'input-container'>
+                <input id = "fileUpload" type="file" name="documents" accept=".mp3">
+            </div>
+            <h2>Step 2: Choose Format</h2>
+            <h4>Convert this file into a 
+            <select id="select-format">
+                <option value=".mp3">.mp3</option>
+                <option value=".aac">.aac</option>
+                <option value=".m4a">.m4a</option>
+                <option value=".wav">.wav</option>
+                <option value=".ogg">.ogg</option>
+            </select></h4>
+        </div>
+        <div class = 'right-part'>
+            <h2>Step 3: Convert File</h2>
+            <button class ='btn' onclick = "convertFile()">Convert!</button>
+            <h2></h2>
+            <h4 id = 'conversion-complete'>Conversion Complete!</h4>
+            <div id = 'loader'></div>
+            <br>
+            <h2>Step 4: Download File</h2>
+            <a id = 'download-link' download><button class ='btn'>Download</button></a>
+        </div>
+    </div>
+    <br><br>
+    <h4 class="make-center">Credit to Goodkatz for the simple CSS waves!</h4>
+    <br>
+    </body>
+    <script src="index.js"></script>
+</html>
